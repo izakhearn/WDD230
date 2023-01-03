@@ -1,0 +1,25 @@
+body {
+    font-family: roboto;
+}
+
+main, header, footer{
+    max-width: 640px;
+    background-color: #6cb2f9;
+    margin: 1rem auto;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.01rem;
+    padding: 1rem;
+}
+
+main {
+    /* Grid with 1 column and even gap of 1rem */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+}
