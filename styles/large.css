@@ -1,5 +1,5 @@
 /* Media query with break point of 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     nav {
         justify-content: center;
         flex-direction: column;
@@ -42,4 +42,10 @@
         font-size: 1.5rem;
         padding: 0.5rem;
     }
+
+    .card{
+        width: 80%;
+        margin: 0.5rem;
+    }
+
 }
