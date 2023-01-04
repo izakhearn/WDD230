@@ -9,13 +9,13 @@ nav {
     color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: right;
     align-items: center;
+    flex-direction: column;
 }
 
 nav li {
-    display: inline-block;
-    list-style: none;
+    display: block;
+    text-align: center;
 }
 
 nav li a {
@@ -28,28 +28,30 @@ nav svg path {
     fill: #fff;
 }
 
-#menu-top {
-    display: none;
+#menu {
+    display:block;
 }
 
 header {
     display: flex;
-    justify-content: left;
     align-items: center;
     background-color: rgb(0, 64, 85);
     max-height: 5rem;
+    justify-content: center;
 }
 
 header h1 {
-    font-size: 3rem;
     color: #fff;
-    padding: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 header #profile-image {
-    width: 7rem;
+
     border-radius: 50%;
-    border: 5px solid #fff;
+
+    width: 4rem;
+    border: 3px solid #fff;
 }
 
 main {
@@ -61,16 +63,16 @@ main {
 }
 
 main h2 {
-    font-size: 2rem;
+
     color: #000;
-    padding: 1rem;
+
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    display: flex;
 }
 
 .card {
@@ -80,7 +82,8 @@ main h2 {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-bottom: 1rem;
-    width: 400px;
+    width: 80%;
+    margin: 0.5rem;
 }
 
 .card li {
