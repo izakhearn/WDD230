@@ -1,0 +1,45 @@
+/* Media query with break point of 600px */
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #menu-top {
+        display: block;
+    }
+
+    #menu-left {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    header #profile-image {
+        width: 4rem;
+        border: 3px solid #fff;
+    }
+
+    .card-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
