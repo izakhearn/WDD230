@@ -2,37 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Izak Hearn">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Izak Hearn" />
     <meta name="description"
-        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <meta property="og:title" content="WDD 230 - Portal - Izak Hearn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course" />
+    <meta property="og:url" content="https://izakhearn.github.io/WDD230/" />
+    <meta property="og:image" content="https://izakhearn.github.io/WDD230/images/Clearwater.jpg" />
     <title>WDD 230 - Portal - Izak Hearn</title>
 </head>
 
 <body>
     <nav>
-        <div id="menu">
+        <div id="menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
                 <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
             </svg>
         </div>
+        <div id="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/>
+            </svg>
+        </div>
         <div>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/izakhearn/">LinkedIn</a></li>
-                <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <ul id="menu-items">
+                <li class="menu-item"><a href="https://www.linkedin.com/in/izakhearn/">LinkedIn</a></li>
+                <li class="menu-item"><a href="https://www.byui.edu/">BYU-Idaho</a></li>
             </ul>
         </div>
     </nav>
     <header>
-        <img id="profile-image" src="images/profile.png" alt="Izak Hearn's Profile Picture">
+        <img id="profile-image" src="images/profile.png" alt="Izak Hearn's Profile Picture" />
         <h1 id="profile-name">Izak Hearn</h1>
     </header>
     <main>
@@ -43,11 +57,16 @@
                 <ul>
                     <li>
                         Week 1: <a href="week1/holygrail.html"> Holy Grail</a> |
-                        <a href="https://codepen.io/izakhearn/pen/abjZWxb">Applied JS</a> | 
-                        <a href="week1/media-query.html">Media Query</a> | 
-                        <a href="coc/site-plan.html">Project Site Plan</a> 
+                        <a href="https://codepen.io/izakhearn/pen/abjZWxb">Applied JS</a>
+                        | <a href="week1/media-query.html">Media Query</a> |
+                        <a href="coc/site-plan.html">Project Site Plan</a>
                     </li>
-                    <li>Week 2: <a href=""></a></li>
+                    <li>
+                        Week 2:
+                        <a href="https://codepen.io/izakhearn/pen/QWBgyxr">WDD Responsive Menu</a>|
+                        <a href="week2/design.html">Designs</a> |
+                        <a href="week2//bom.html">Book of Mormon Chapters</a>
+                    </li>
                     <li>Week 3: <a href=""></a></li>
                     <li>Week 4: <a href=""></a></li>
                     <li>Week 5: <a href=""></a></li>
@@ -64,7 +83,9 @@
         </div>
     </main>
     <footer>
-        <p class="footer-text">&copy; <a id="year"></a> | Izak Hearn | South Africa 🇿🇦</p>
+        <p class="footer-text">
+            &copy; <a id="year"></a> | Izak Hearn | South Africa 🇿🇦
+        </p>
         <p class="highlight" id="lastModified"></p>
     </footer>
 </body>
