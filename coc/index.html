@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Izak Hearn">
+    <meta name="description"
+        content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members">
+    <meta name="title" content="Clear Water Chamber of Commerce">
+    <meta property="og:title" content="Clear Water Chamber of Commerce">
+    <meta property="og:description"
+        content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members">
+    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:url" content="https://izakhearn.github.io/wdd230/coc/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Clear Water Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Clear Water Chamber of Commerce</title>
+</head>
+
+<body>
+    <nav>
+        <img id="nav-logo" src="images/logo.svg" alt="Clear Water Chamber of Commerce Logo">
+        <div id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+            </svg>
+        </div>
+        <div id="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path
+                    d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+            </svg>
+        </div>
+        <ul id="menu-items">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="discover.html">Discover</a></li>
+            <li class="menu-item"><a href="directory.html">Directory</a></li>
+            <li class="menu-item"><a href="join.html">Join</a></li>
+        </ul>
+        <!-- Weather Place holder that will be automated to get are weather by Javascript -->
+        <div id="weather">
+            <div id="weather-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path
+                        d="M22.5 9.5V2h3v7.5Zm12.8 5.3-2.1-2.1 5.3-5.35 2.1 2.15Zm3.2 10.7v-3H46v3ZM22.5 46v-7.5h3V46Zm-9.85-31.25L7.4 9.5l2.1-2.1 5.3 5.3Zm25.9 25.85-5.35-5.3 2.05-2.05 5.4 5.2ZM2 25.5v-3h7.5v3Zm7.55 15.1L7.4 38.5l5.25-5.25 1.1 1 1.1 1.05ZM24 36q-5 0-8.5-3.5T12 24q0-5 3.5-8.5T24 12q5 0 8.5 3.5T36 24q0 5-3.5 8.5T24 36Zm0-3q3.75 0 6.375-2.625T33 24q0-3.75-2.625-6.375T24 15q-3.75 0-6.375 2.625T15 24q0 3.75 2.625 6.375T24 33Zm0-9Z" />
+                </svg>
+            </div>
+            <p id="weather-info"> High: 5 C | Low: -1 C</p>
+        </div>
+    </nav>
+    <header>
+        <section id="hero-1" class="hero">
+            <div class="hero-content">
+                <h1>Clear Water Chamber of Commerce</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="join.html">Join Now</a>
+            </div>
+        </section>
+        <section id="hero-2" class="hero">
+            <div class="hero-content">
+                <h1>Discover Clear Water</h1>
+                <p>Clear Water is a small town in the middle of nowhere. We have a lot of great things to offer, but we
+                    need your help to get the word out. Join the Clear Water Chamber of Commerce today and help us grow
+                    our community.</p>
+                <a href="discover.html">Discover Now</a>
+            </div>
+        </section>
+        <section id="hero-3" class="hero">
+            <div class="hero-content">
+                <h1>Directory</h1>
+                <p>Clear Water is a small town in the middle of nowhere. We have a lot of great things to offer, but we
+                    need your help to get the word out. Join the Clear Water Chamber of Commerce today and help us grow
+                    our community.</p>
+                <a href="directory.html">Directory</a>
+            </div>
+        </section>
+        <div id="hero-tabs">
+            <!-- Radio Boxes showing which section is displaying -->
+            <input type="radio" name="hero" id="hero-1-tab" checked>
+            <input type="radio" name="hero" id="hero-2-tab">
+            <input type="radio" name="hero" id="hero-3-tab">
+        </div>
+    </header>
+    <main>
+        <!-- Member Showcase Section -->
+        <section id="members">
+            <h2 id="member-heading">Members</h2>
+            <!-- To be filled in by a JSON Document by Javascript code when called from server -->
+            <!-- Below is a sample of the layout -->
+            <div class="member" id="member-1">
+                <h2>Member Name</h2>
+                <div class="member-content">
+                    <p>Member Description</p>
+                <a href="directory.html">Learn More</a>
+            </div>
+                <img src="images/placeholder.jpg" alt="Member Logo">
+            </div>
+            <div class="member" id="member-2">
+                <h2>Member Name</h2>
+                <div class="member-content">
+                <p>Member Description</p>
+                <a href="directory.html">Learn More</a>
+            </div>
+                <img src="images/placeholder.jpg" alt="Member Logo">
+            </div>
+            <div class="member" id="member-3">
+                <h2>Member Name</h2>
+                <div class="member-content">
+                <p>Member Description</p>
+                <a href="directory.html">Learn More</a>
+            </div>
+                <img src="images/placeholder.jpg" alt="Member Logo">
+            </div>
+            <div class="member" id="member-4">
+                <h2>Member Name</h2>
+                <div class="member-content">
+                <p>Member Description</p>
+                <a href="directory.html">Learn More</a>
+            </div>
+                <img src="images/placeholder.jpg" alt="Member Logo">
+            </div>
+            <div id="member-tabs">
+                <!-- Radio Boxes showing which member is displaying -->
+                <input type="radio" name="member" id="member-1-tab" checked>
+                <input type="radio" name="member" id="member-2-tab">
+                <input type="radio" name="member" id="member-3-tab">
+                <input type="radio" name="member" id="member-4-tab">
+        </section>
+
+        <!-- Events -->
+        <section id="events">
+            <!-- To be filled in by a JSON Document by Javascript code when called from server -->
+            <!-- Below is a sample of the layout -->
+            <img src="images/placeholder.jpg" alt="Events-Background">
+            <div class="event-content" id="event-1">
+                <h2>Event Name</h2>
+                <p id="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque inventore, nam saepe, consequuntur doloribus natus dicta, excepturi nemo cupiditate atque ullam. Iste porro, unde animi consequuntur dignissimos possimus saepe!</p>
+                <p id="event-details">Event Date : 00-00-0000 | Location : 23 Waverly Place</p>
+                <a id="event-button" href="discover.html">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Chamber of Commerce Team -->
+        <section id="team">
+            <div class="team-member" id="team-member-1">
+                <img src="images/placeholder.jpg" alt="Team Member Photo">
+                <h2>Team Member Name</h2>
+                <p>Team Member Position</p>
+            </div>
+            <div class="team-member" id="team-member-2">
+                <img src="images/placeholder.jpg" alt="Team Member Photo">
+                <h2>Team Member Name</h2>
+                <p>Team Member Position</p>
+            </div>
+            <div class="team-member" id="team-member-3">
+                <img src="images/placeholder.jpg" alt="Team Member Photo">
+                <h2>Team Member Name</h2>
+                <p>Team Member Position</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <!-- Include contact information -->
+        <p>123 Main Street Clear Water, WA 12345</p>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: <a href="mailto:info@clearwatercoc.com"> info@clearwatercoc.com</a></p>
+        <p id="footer-end">&copy; <span id="copyYear"></span> Clear Water Chamber of Commerce | Izak Hearn | WDD 230 | <span id="lastModified"></span></p>
+    </footer>
+<script src="scripts/dates.js"></script>
+<script src="scripts/mobileMenu.js"></script>
+</body>
+
+</html>
