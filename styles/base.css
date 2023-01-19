@@ -135,3 +135,20 @@ footer {
 .hidden {
     display: none;
 }
+
+#hero img{
+    width: 100%;
+    height: auto;
+}
+
+#hero-content {
+    color:#fff;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.299);
+    z-index: 1;
+    font-family: cursive;
+    padding: 2%;
+}

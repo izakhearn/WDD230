@@ -42,4 +42,16 @@
         width: 400px;
     }
 
+    #hero-content{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.299);
+        z-index: 1;
+        font-family: cursive;
+        padding: 2%;
+    }
+
 }

@@ -18,12 +18,13 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
     <meta property="og:title" content="WDD 230 - Portal - Izak Hearn" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
         content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course" />
     <meta property="og:url" content="https://izakhearn.github.io/WDD230/" />
-    <meta property="og:image" content="https://izakhearn.github.io/WDD230/images/Clearwater.jpg" />
+    <meta property="og:image" content="https://izakhearn.github.io/WDD230/images/Clearwater.webp" />
     <title>WDD 230 - Portal - Izak Hearn</title>
 </head>
 
@@ -50,10 +51,20 @@
         </div>
     </nav>
     <header>
-        <img id="profile-image" src="images/profile.png" alt="Izak Hearn's Profile Picture" />
+        <img id="profile-image" src="images/profile.webp" alt="Izak Hearn's Profile Picture" loading="lazy" />
         <h1 id="profile-name">Izak Hearn</h1>
     </header>
     <main>
+        <section id="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/temple-400px.webp">
+            <source media="(max-width: 960px)" srcset="images/temple-960px.webp">
+            <img src="images/temple-960px.webp" alt="Temple JHB" loading="lazy">
+        </picture>
+        <div id="hero-content">
+            <p>South Africa Johannesburg Temple</p>
+        </div>
+    </section>
         <h2>WDD 230: Course Activity Portal</h2>
         <div class="card-container">
             <section class="card" id="card-1">
@@ -84,8 +95,13 @@
             </section>
             <section class="card" id="card-3">
                 <h3>Information</h3>
+                <p id="weather">Weather Placeholder</p>
+                <p id="visitCount"></p>
             </section>
         </div>
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57352.139979082676!2d28.266511450000003!3d-26.0496249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956ac491db13cb%3A0xde3354e4b77ca43a!2sGlen%20marais%2C%20Kempton%20Park%2C%201619%2C%20South%20Africa!5e0!3m2!1sen!2sau!4v1674142901417!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         <p class="footer-text">
