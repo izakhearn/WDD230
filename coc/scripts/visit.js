@@ -8,7 +8,7 @@ var daysBetween = document.getElementById("days-between");
 var today = new Date();
 
 // Get last visit date from local storage
-var lastVisit = localStorage.getItem("lastVisit");
+var lastVisit = localStorage.getItem("lastVisit") || today;
 
 // If last visit date is not set, set it to today
 if (lastVisit == null) {
