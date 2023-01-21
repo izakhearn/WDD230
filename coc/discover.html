@@ -13,7 +13,7 @@
     <meta property="og:title" content="Clear Water Chamber of Commerce" />
     <meta
       property="og:description"
-      content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
+      content="Discover page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
     />
     <meta property="og:image" content="images/logo.svg" />
     <meta
@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/visit.js" defer></script>
     <title>Clear Water Chamber of Commerce</title>
   </head>
 
@@ -76,7 +77,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            ad maxim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
@@ -116,91 +117,112 @@
         <input type="radio" name="hero" id="hero-3-tab" />
       </div>
     </header>
-    <main>
-      <!-- Member Showcase Section -->
-      <section id="members">
-        <h2 id="member-heading">Members</h2>
-        <!-- To be filled in by a JSON Document by Javascript code when called from server -->
-        <!-- Below is a sample of the layout -->
-        <div class="member" id="member-1">
-          <h2>Member Name</h2>
-          <div class="member-content">
-            <p>Member Description</p>
-            <a href="directory.html">Learn More</a>
+    <main id="sidebar-grid">
+        <section id="sidebar">
+          <h2>Area Info and Statistics</h2>
+          <p>Population : 11,947</p>
+          <p>Median Income : $45,000</p>
+          <p>Median Age : 35</p>
+          <p>Median Home Price : $250,000</p>
+          <h2> Last Visit Info</h2>
+          <p >You last viewed this page on :</p>
+          <P id="last-date"></P>
+          <p >Days Between Visits :</p>
+          <P id="days-between"></P>
+      </section>   
+      <section id="detailed-events">
+        <h2>Local Interests</h2>
+        <div class="local-interest">
+        <picture>
+          <source
+            srcset="images/mountains-960.webp"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="images/mountains-400.webp"
+          />
+          <img
+            src="images/mountains.webp"
+            alt=" Rocky Mountain Range"
+            loading="lazy"
+          />
+        </picture>
+        <h3>Rocky Mountain Range</h3>
+        </div>
+        <div class="local-interest">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="images/camping-960.webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="images/camping-400.webp"
+            />
+            <img
+              src="images/camping.webp"
+              alt="Camping Grounds"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Camping Grounds</h3>
           </div>
-          <img src="images/placeholder.webp" alt="Member Logo" />
-        </div>
-        <div class="member" id="member-2">
-          <h2>Member Name</h2>
-          <div class="member-content">
-            <p>Member Description</p>
-            <a href="directory.html">Learn More</a>
-          </div>
-          <img src="images/placeholder.webp" alt="Member Logo" />
-        </div>
-        <div class="member" id="member-3">
-          <h2>Member Name</h2>
-          <div class="member-content">
-            <p>Member Description</p>
-            <a href="directory.html">Learn More</a>
-          </div>
-          <img src="images/placeholder.webp" alt="Member Logo" />
-        </div>
-        <div class="member" id="member-4">
-          <h2>Member Name</h2>
-          <div class="member-content">
-            <p>Member Description</p>
-            <a href="directory.html">Learn More</a>
-          </div>
-          <img src="images/placeholder.webp" alt="Member Logo" />
-        </div>
-        <div id="member-tabs">
-          <!-- Radio Boxes showing which member is displaying -->
-          <input type="radio" name="member" id="member-1-tab" checked />
-          <input type="radio" name="member" id="member-2-tab" />
-          <input type="radio" name="member" id="member-3-tab" />
-          <input type="radio" name="member" id="member-4-tab" />
-        </div>
-      </section>
-
-      <!-- Events -->
-      <section id="events">
-        <!-- To be filled in by a JSON Document by Javascript code when called from server -->
-        <!-- Below is a sample of the layout -->
-        <img src="images/placeholder.webp" alt="Events-Background" />
-        <div class="event-content" id="event-1">
-          <h2>Event Name</h2>
-          <p id="event-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            doloremque inventore, nam saepe, consequuntur doloribus natus dicta,
-            excepturi nemo cupiditate atque ullam. Iste porro, unde animi
-            consequuntur dignissimos possimus saepe!
-          </p>
-          <p id="event-details">
-            Event Date : 00-00-0000 | Location : 23 Waverly Place
-          </p>
-          <a id="event-button" href="discover.html">Learn More</a>
-        </div>
-      </section>
-
-      <!-- Chamber of Commerce Team -->
-      <section id="team">
-        <div class="team-member" id="team-member-1">
-          <img src="images/placeholder.webp" alt="Team Member Photo" />
-          <h2>Team Member Name</h2>
-          <p>Team Member Position</p>
-        </div>
-        <div class="team-member" id="team-member-2">
-          <img src="images/placeholder.webp" alt="Team Member Photo" />
-          <h2>Team Member Name</h2>
-          <p>Team Member Position</p>
-        </div>
-        <div class="team-member" id="team-member-3">
-          <img src="images/placeholder.webp" alt="Team Member Photo" />
-          <h2>Team Member Name</h2>
-          <p>Team Member Position</p>
-        </div>
-      </section>
+          <div class="local-interest">
+            <picture>
+              <source
+                media="(min-width: 960px)"
+                srcset="images/restaurant-960.webp"
+              />
+              <source
+                media="(min-width: 400px)"
+                srcset="images/restaurant-400.webp"
+              />
+              <img
+                src="images/restaurant.webp"
+                alt="Restaurants"
+                loading="lazy"
+              />
+            </picture>
+            <h3>Restaurants</h3>
+            </div>
+            <div class="local-interest">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="images/art-960.webp"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="images/art-400.webp"
+                />
+                <img
+                  src="images/art.webp"
+                  alt="Art"
+                  loading="lazy"
+                />
+              </picture>
+              <h3>Art</h3>
+              </div>
+              <div class="local-interest">
+                <picture>
+                  <source
+                    media="(min-width: 960px)"
+                    srcset="images/hiking-960.webp"
+                  />
+                  <source
+                    media="(min-width: 400px)"
+                    srcset="images/hiking-400.webp"
+                  />
+                  <img
+                    src="images/hiking.webp"
+                    alt="Hiking"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3>Hiking</h3>
+                </div>
+        
+      </section>   
     </main>
     <footer>
       <!-- Include contact information -->

@@ -13,8 +13,8 @@
   --paragraph-color-on-white: #1a936f; /* paragraph text on a white background */
   --paragraph-color-on-color: #c6dabf; /* paragraph text on a colored background */
   --paragraph-background-color: #114b5f;
-  --nav-link-color: #f3e9d2;
-  --nav-background-color: #1a936f;
+  --nav-link-color: white;
+  --nav-background-color: #17795c;
   --nav-hover-link-color: #114b5f;
   --nav-hover-background-color: #c6dabf;
 }
@@ -128,11 +128,11 @@ header {
 }
 
 .hero {
-  background-image: url("../images/placeholder.jpg");
+  background-image: url("../images/placeholder.webp");
 }
 
 .hero-content {
-  background-color: #114c5f76;
+  background-color: #ffffff76;
   z-index: 1;
   padding: 1rem;
 }
@@ -348,12 +348,16 @@ header {
 }
 
 footer {
-  background-color: var(--secondary-color);
-  color: var(--nav-link-color);
+  background-color: var(--nav-background-color);
+  color:white;
   text-align: center;
   margin-top: 3rem;
   justify-items: center;
   padding: 1rem;
+}
+
+footer p{
+  color: white;
 }
 
 footer a {
@@ -361,7 +365,7 @@ footer a {
 }
 
 #footer-end {
-  color: yellowgreen;
+  color:  rgb(221, 255, 152);
 }
 
 .mobileMenu {
@@ -378,4 +382,65 @@ footer a {
 
 .show {
   display: block !important;
+}
+
+/* Start of CSS Unique to the Discover */
+
+#discover {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+#sidebar-grid{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 0.5fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "main"
+  "sidebar1";
+  text-align: center;
+}
+
+#sidebar{
+  grid-area: sidebar1;
+  color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border-color: var(--accent1-color);
+  border-style: solid;
+  height: auto;
+  grid-row: 2 / 3;
+  
+}
+
+#days-between, #last-date{
+color: aquamarine;
+}
+
+#detailed-events{
+  grid-area: main;
+  color: #fff;
+  padding-top: 2rem;
+margin: 1rem;
+
+  border-radius: 10px;
+  border-color: var(--accent1-color);
+  border-style: solid;
+  grid-row: 1/2;
+}
+
+.local-interest img{
+width: 50%;
+height: 0 auto;
+border-radius: 10%;
+}
+
+.local-interest img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+box-shadow: 0 0 10px var(--nav-link-color);
 }
