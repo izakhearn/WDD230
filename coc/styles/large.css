@@ -312,76 +312,72 @@
   footer a {
     color: white;
   }
-  footer p{
+  footer p {
     color: white;
   }
   #footer-end {
     color: rgb(221, 255, 152);
   }
 
-  
-    /* Start of CSS Unique to the Discover */
+  /* Start of CSS Unique to the Discover */
 
-    #discover {
-      background-color: #fff;
-      padding: 2rem;
-      margin: 2rem;
-      border-radius: 10px;
+  #discover {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
   }
 
-  #sidebar-grid{
-      display: grid;
-      grid-template-columns: 0.5fr 1fr ;
-      grid-template-rows: 0.35fr 1fr;
-      grid-gap: 10px;
-      grid-template-areas: "sidebar1 main";
-      text-align: center;
+  #sidebar-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.35fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "sidebar1 main";
+    text-align: center;
   }
 
-  #sidebar{
-      grid-area: sidebar1;
-      color: #fff;
-      padding: 2rem;
-      margin: 2rem;
-      border-radius: 10px;
-      border-color: var(--accent1-color);
-      border-style: solid;
-      position: sticky;
-      top: 25%;
-      height: auto;
-      grid-row: 1 / 2;
-      
+  #sidebar {
+    grid-area: sidebar1;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    border-color: var(--accent1-color);
+    border-style: solid;
+    position: sticky;
+    top: 25%;
+    height: auto;
+    grid-row: 1 / 2;
   }
 
-  #days-between, #last-date{
-   color: aquamarine;
+  #days-between,
+  #last-date {
+    color: aquamarine;
   }
 
-  #detailed-events{
-      grid-area: main;
-      color: #fff;
-      padding-top: 2rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-right: 2rem;
-      border-radius: 10px;
-      border-color: var(--accent1-color);
-      border-style: solid;
-      grid-row: 1/3;
+  #detailed-events {
+    grid-area: main;
+    color: #fff;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: var(--accent1-color);
+    border-style: solid;
+    grid-row: 1/3;
   }
 
-  .local-interest img{
+  .local-interest img {
     width: 50%;
     height: 0 auto;
     border-radius: 10%;
   }
 
-  .local-interest img:hover{
+  .local-interest img:hover {
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0 0 10px var(--nav-link-color);
   }
-
-
-
 }
