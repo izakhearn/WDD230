@@ -1,0 +1,23 @@
+tr:first-child th {
+  background-color: black;
+  color: white;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #ddd;
+}

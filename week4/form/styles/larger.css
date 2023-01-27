@@ -1,0 +1,45 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 45em) {
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 64em;
+    margin: auto;
+  }
+
+  /*----------- BODY --------------*/
+
+  /*----------- HEADER --------------*/
+
+  /*----------- NAVIGATION --------------*/
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li {
+    width: auto;
+  }
+
+  nav ul li:first-child a {
+    border-left: 1px solid #777;
+  }
+
+  nav ul li:last-child a {
+    border-right: 1px solid #777;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  /*----------- MAIN --------------*/
+
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
+
+  /*----------- FOOTER --------------*/
+}
+
+/* end of media query */

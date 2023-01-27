@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+    <meta name="author" content="Izak Hearn">
+    <meta name="description" content="Fill Me In">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="fname" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="123551234"></label>
+                <label class="top">Email*<input type="email" name="email" required
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Website<input type="url" name="url" placeholder="https://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo
+                    Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="processing" value="yes">
+                    Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP
+                    Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <!-- Anticipated Completion Date -->
+                <label class="top">Anticipated Completion Date<input type="date" name="date"></label>
+                <!-- Course Subject -->
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="design">Design</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="business">Business</option>
+                        <option value="science">Science</option>
+                        <option value="education">Education</option>
+                    </select>
+                </label>
+                <!-- How Many Authors in Numbers -->
+                <label class="top">How Many Authors
+                    <input type="number" name="authors">
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
+        </form>
+    </main>
+
+    <footer>&copy; &bull; Paul Cheney &bull; 123-555-6789</footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

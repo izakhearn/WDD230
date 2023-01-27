@@ -371,7 +371,7 @@
 
   .local-interest img {
     width: 50%;
-    height: 0 auto;
+    height: auto;
     border-radius: 10%;
   }
 

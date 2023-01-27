@@ -1,227 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Izak Hearn" />
-    <meta
-      name="description"
-      content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
-    />
-    <meta name="title" content="Clear Water Chamber of Commerce" />
-    <meta property="og:title" content="Clear Water Chamber of Commerce" />
-    <meta
-      property="og:description"
-      content="Discover page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
-    />
-    <meta property="og:image" content="images/logo.svg" />
-    <meta
-      property="og:url"
-      content="https://izakhearn.github.io/wdd230/coc/index.html"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Clear Water Chamber of Commerce" />
-    <meta property="og:locale" content="en_US" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <script src="scripts/visit.js" defer></script>
-    <link rel="icon" href="images/favicon.ico" />
-    <title>Clear Water Chamber of Commerce</title>
-  </head>
 
-  <body>
-    <nav>
-      <img
-        id="nav-logo"
-        src="images/logo.svg"
-        alt="Clear Water Chamber of Commerce Logo"
-      />
-      <div id="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-          <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
-        </svg>
-      </div>
-      <div id="close-button">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Izak Hearn">
+  <meta name="description"
+    content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members">
+  <meta name="title" content="Clear Water Chamber of Commerce">
+  <meta property="og:title" content="Clear Water Chamber of Commerce">
+  <meta property="og:description"
+    content="Discover page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members">
+  <meta property="og:image" content="images/logo.svg">
+  <meta property="og:url" content="https://izakhearn.github.io/wdd230/coc/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Clear Water Chamber of Commerce">
+  <meta property="og:locale" content="en_US">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/visit.js" defer></script>
+  <link rel="icon" href="images/favicon.ico">
+  <title>Clear Water Chamber of Commerce</title>
+</head>
+
+<body>
+  <nav>
+    <img id="nav-logo" src="images/logo.svg" alt="Clear Water Chamber of Commerce Logo">
+    <div id="hamburger">
+      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
+      </svg>
+    </div>
+    <div id="close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+        <path
+          d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+      </svg>
+    </div>
+    <ul id="menu-items">
+      <li class="menu-item"><a href="index.html">Home</a></li>
+      <li class="menu-item"><a href="discover.html">Discover</a></li>
+      <li class="menu-item"><a href="#">Directory</a></li>
+      <li class="menu-item"><a href="#">Join</a></li>
+    </ul>
+    <!-- Weather Place holder that will be automated to get are weather by Javascript -->
+    <div id="weather">
+      <div id="weather-icon">
         <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
           <path
-            d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
-          />
+            d="M22.5 9.5V2h3v7.5Zm12.8 5.3-2.1-2.1 5.3-5.35 2.1 2.15Zm3.2 10.7v-3H46v3ZM22.5 46v-7.5h3V46Zm-9.85-31.25L7.4 9.5l2.1-2.1 5.3 5.3Zm25.9 25.85-5.35-5.3 2.05-2.05 5.4 5.2ZM2 25.5v-3h7.5v3Zm7.55 15.1L7.4 38.5l5.25-5.25 1.1 1 1.1 1.05ZM24 36q-5 0-8.5-3.5T12 24q0-5 3.5-8.5T24 12q5 0 8.5 3.5T36 24q0 5-3.5 8.5T24 36Zm0-3q3.75 0 6.375-2.625T33 24q0-3.75-2.625-6.375T24 15q-3.75 0-6.375 2.625T15 24q0 3.75 2.625 6.375T24 33Zm0-9Z" />
         </svg>
       </div>
-      <ul id="menu-items">
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="discover.html">Discover</a></li>
-        <li class="menu-item"><a href="directory.html">Directory</a></li>
-        <li class="menu-item"><a href="join.html">Join</a></li>
-      </ul>
-      <!-- Weather Place holder that will be automated to get are weather by Javascript -->
-      <div id="weather">
-        <div id="weather-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-            <path
-              d="M22.5 9.5V2h3v7.5Zm12.8 5.3-2.1-2.1 5.3-5.35 2.1 2.15Zm3.2 10.7v-3H46v3ZM22.5 46v-7.5h3V46Zm-9.85-31.25L7.4 9.5l2.1-2.1 5.3 5.3Zm25.9 25.85-5.35-5.3 2.05-2.05 5.4 5.2ZM2 25.5v-3h7.5v3Zm7.55 15.1L7.4 38.5l5.25-5.25 1.1 1 1.1 1.05ZM24 36q-5 0-8.5-3.5T12 24q0-5 3.5-8.5T24 12q5 0 8.5 3.5T36 24q0 5-3.5 8.5T24 36Zm0-3q3.75 0 6.375-2.625T33 24q0-3.75-2.625-6.375T24 15q-3.75 0-6.375 2.625T15 24q0 3.75 2.625 6.375T24 33Zm0-9Z"
-            />
-          </svg>
-        </div>
-        <p id="weather-info">High: 5 C | Low: -1 C</p>
+      <p id="weather-info">High: 5 C | Low: -1 C</p>
+    </div>
+  </nav>
+  <header>
+    <section id="hero-1" class="hero">
+      <div class="hero-content">
+        <h1>Clear Water Chamber of Commerce</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad maxim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <a href="#">Join Now</a>
       </div>
-    </nav>
-    <header>
-      <section id="hero-1" class="hero">
-        <div class="hero-content">
-          <h1>Clear Water Chamber of Commerce</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad maxim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <a href="join.html">Join Now</a>
-        </div>
-      </section>
-      <section id="hero-2" class="hero">
-        <div class="hero-content">
-          <h1>Discover Clear Water</h1>
-          <p>
-            Clear Water is a small town in the middle of nowhere. We have a lot
-            of great things to offer, but we need your help to get the word out.
-            Join the Clear Water Chamber of Commerce today and help us grow our
-            community.
-          </p>
-          <a href="discover.html">Discover Now</a>
-        </div>
-      </section>
-      <section id="hero-3" class="hero">
-        <div class="hero-content">
-          <h1>Directory</h1>
-          <p>
-            Clear Water is a small town in the middle of nowhere. We have a lot
-            of great things to offer, but we need your help to get the word out.
-            Join the Clear Water Chamber of Commerce today and help us grow our
-            community.
-          </p>
-          <a href="directory.html">Directory</a>
-        </div>
-      </section>
-      <div id="hero-tabs">
-        <!-- Radio Boxes showing which section is displaying -->
-        <input type="radio" name="hero" id="hero-1-tab" checked />
-        <input type="radio" name="hero" id="hero-2-tab" />
-        <input type="radio" name="hero" id="hero-3-tab" />
+    </section>
+    <section id="hero-2" class="hero">
+      <div class="hero-content">
+        <h1>Discover Clear Water</h1>
+        <p>
+          Clear Water is a small town in the middle of nowhere. We have a lot
+          of great things to offer, but we need your help to get the word out.
+          Join the Clear Water Chamber of Commerce today and help us grow our
+          community.
+        </p>
+        <a href="discover.html">Discover Now</a>
       </div>
-    </header>
-    <main id="sidebar-grid">
-      <section id="sidebar">
-        <h2>Area Info and Statistics</h2>
-        <p>Population : 11,947</p>
-        <p>Median Income : $45,000</p>
-        <p>Median Age : 35</p>
-        <p>Median Home Price : $250,000</p>
-        <h2>Last Visit Info</h2>
-        <p>You last viewed this page on :</p>
-        <p id="last-date"></p>
-        <p>Days Between Visits :</p>
-        <p id="days-between"></p>
-      </section>
-      <section id="detailed-events">
-        <h2>Local Interests</h2>
-        <div class="local-interest">
-          <picture>
-            <source srcset="images/mountains-960.webp" />
-            <source
-              media="(min-width: 400px)"
-              srcset="images/mountains-400.webp"
-            />
-            <img
-              src="images/mountains.webp"
-              alt=" Rocky Mountain Range"
-              loading="lazy"
-            />
-          </picture>
-          <h3>Rocky Mountain Range</h3>
-        </div>
-        <div class="local-interest">
-          <picture>
-            <source
-              media="(min-width: 960px)"
-              srcset="images/camping-960.webp"
-            />
-            <source
-              media="(min-width: 400px)"
-              srcset="images/camping-400.webp"
-            />
-            <img
-              src="images/camping.webp"
-              alt="Camping Grounds"
-              loading="lazy"
-            />
-          </picture>
-          <h3>Camping Grounds</h3>
-        </div>
-        <div class="local-interest">
-          <picture>
-            <source
-              media="(min-width: 960px)"
-              srcset="images/restaurant-960.webp"
-            />
-            <source
-              media="(min-width: 400px)"
-              srcset="images/restaurant-400.webp"
-            />
-            <img
-              src="images/restaurant.webp"
-              alt="Restaurants"
-              loading="lazy"
-            />
-          </picture>
-          <h3>Restaurants</h3>
-        </div>
-        <div class="local-interest">
-          <picture>
-            <source media="(min-width: 960px)" srcset="images/art-960.webp" />
-            <source media="(min-width: 400px)" srcset="images/art-400.webp" />
-            <img src="images/art.webp" alt="Art" loading="lazy" />
-          </picture>
-          <h3>Art</h3>
-        </div>
-        <div class="local-interest">
-          <picture>
-            <source
-              media="(min-width: 960px)"
-              srcset="images/hiking-960.webp"
-            />
-            <source
-              media="(min-width: 400px)"
-              srcset="images/hiking-400.webp"
-            />
-            <img src="images/hiking.webp" alt="Hiking" loading="lazy" />
-          </picture>
-          <h3>Hiking</h3>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <!-- Include contact information -->
-      <p>123 Main Street Clear Water, WA 12345</p>
-      <p>Phone: 555-555-5555</p>
-      <p>
-        Email:
-        <a href="mailto:info@clearwatercoc.com"> info@clearwatercoc.com</a>
-      </p>
-      <p id="footer-end">
-        &copy; <span id="copyYear"></span> Clear Water Chamber of Commerce |
-        Izak Hearn | WDD 230 | <span id="lastModified"></span>
-      </p>
-    </footer>
-    <script src="scripts/dates.js"></script>
-    <script src="scripts/mobileMenu.js"></script>
-  </body>
+    </section>
+    <section id="hero-3" class="hero">
+      <div class="hero-content">
+        <h1>Directory</h1>
+        <p>
+          Clear Water is a small town in the middle of nowhere. We have a lot
+          of great things to offer, but we need your help to get the word out.
+          Join the Clear Water Chamber of Commerce today and help us grow our
+          community.
+        </p>
+        <a href="#">Directory</a>
+      </div>
+    </section>
+    <div id="hero-tabs">
+      <!-- Radio Boxes showing which section is displaying -->
+      <input type="radio" name="hero" id="hero-1-tab" checked>
+      <input type="radio" name="hero" id="hero-2-tab">
+      <input type="radio" name="hero" id="hero-3-tab">
+    </div>
+  </header>
+  <main id="sidebar-grid">
+    <section id="sidebar">
+      <h2>Area Info and Statistics</h2>
+      <p>Population : 11,947</p>
+      <p>Median Income : $45,000</p>
+      <p>Median Age : 35</p>
+      <p>Median Home Price : $250,000</p>
+      <h2>Last Visit Info</h2>
+      <p>You last viewed this page on :</p>
+      <p id="last-date"></p>
+      <p>Days Between Visits :</p>
+      <p id="days-between"></p>
+    </section>
+    <section id="detailed-events">
+      <h2>Local Interests</h2>
+      <div class="local-interest">
+        <picture>
+          <source media="(min-width: 960px)" srcset="images/mountains-960.webp">
+          <source media="(min-width: 400px)" srcset="images/mountains-400.webp">
+          <img src="images/mountains.webp" alt=" Rocky Mountain Range" loading="lazy">
+        </picture>
+        <h3>Rocky Mountain Range</h3>
+      </div>
+      <div class="local-interest">
+        <picture>
+          <source media="(min-width: 960px)" srcset="images/camping-960.webp">
+          <source media="(min-width: 400px)" srcset="images/camping-400.webp">
+          <img src="images/camping.webp" alt="Camping Grounds" loading="lazy">
+        </picture>
+        <h3>Camping Grounds</h3>
+      </div>
+      <div class="local-interest">
+        <picture>
+          <source media="(min-width: 960px)" srcset="images/restaurant-960.webp">
+          <source media="(min-width: 400px)" srcset="images/restaurant-400.webp">
+          <img src="images/restaurant.webp" alt="Restaurants" loading="lazy" >
+        </picture>
+        <h3>Restaurants</h3>
+      </div>
+      <div class="local-interest">
+        <picture>
+          <source media="(min-width: 960px)" srcset="images/art-960.webp">
+          <source media="(min-width: 400px)" srcset="images/art-400.webp">
+          <img src="images/art.webp" alt="Art" loading="lazy">
+        </picture>
+        <h3>Art</h3>
+      </div>
+      <div class="local-interest">
+        <picture>
+          <source media="(min-width: 960px)" srcset="images/hiking-960.webp">
+          <source media="(min-width: 400px)" srcset="images/hiking-400.webp">
+          <img src="images/hiking.webp" alt="Hiking" loading="lazy">
+        </picture>
+        <h3>Hiking</h3>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Include contact information -->
+    <p>123 Main Street Clear Water, WA 12345</p>
+    <p>Phone: 555-555-5555</p>
+    <p>
+      Email:
+      <a href="mailto:info@clearwatercoc.com"> info@clearwatercoc.com</a>
+    </p>
+    <p id="footer-end">
+      &copy; <span id="copyYear"></span> Clear Water Chamber of Commerce |
+      Izak Hearn | WDD 230 | <span id="lastModified"></span>
+    </p>
+  </footer>
+  <script src="scripts/dates.js"></script>
+  <script src="scripts/mobileMenu.js"></script>
+</body>
+
 </html>

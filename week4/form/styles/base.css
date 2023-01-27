@@ -1,0 +1,148 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+  padding: 0.5rem 2%;
+  background-color: #ddd;
+}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+  background-color: #666;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  float: left;
+  width: 25%;
+}
+nav ul li a {
+  display: block;
+  background-color: #444;
+  color: #eee;
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: #eee;
+  color: #333;
+}
+nav ul li.active a {
+  background-color: #000;
+  color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+}
+
+/* -------------FORM-------------- */
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: red;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  --webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px grey;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: 6px solid red;
+}
+
+form label.top input:required:valid {
+  border-left: 6px solid green;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #ddd;
+  padding: 0.5rem 2%;
+  text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
