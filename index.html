@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="author" content="Izak Hearn" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Izak Hearn">
     <meta name="description"
-        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
     <script src="scripts/visit.js" defer></script>
-    <meta property="og:title" content="WDD 230 - Portal - Izak Hearn" />
-    <meta property="og:type" content="website" />
+    <script src="scripts/form.js" defer></script>
+    <meta property="og:title" content="WDD 230 - Portal - Izak Hearn">
+    <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course" />
-    <meta property="og:url" content="https://izakhearn.github.io/WDD230/" />
-    <meta property="og:image" content="https://izakhearn.github.io/WDD230/images/Clearwater.webp" />
-    <link rel="icon" href="images/favicon.ico" />
+        content="Izak Hearn's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course">
+    <meta property="og:url" content="https://izakhearn.github.io/WDD230/">
+    <meta property="og:image" content="https://izakhearn.github.io/WDD230/images/Clearwater.webp">
+    <link rel="icon" href="images/favicon.ico">
     <title>WDD 230 - Portal - Izak Hearn</title>
 </head>
 
@@ -55,20 +56,20 @@
         <div id="mode">☑️</div>
     </nav>
     <header>
-        <img id="profile-image" src="images/profile.webp" alt="Izak Hearn's Profile Picture" loading="lazy" />
+        <img id="profile-image" src="images/profile.webp" alt="Izak Hearn's Profile Picture" loading="lazy">
         <h1 id="profile-name">Izak Hearn</h1>
     </header>
     <main>
-        <section id="hero">
+        <div id="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/temple-400px.webp" />
-                <source media="(max-width: 960px)" srcset="images/temple-960px.webp" />
-                <img src="images/temple-960px.webp" alt="Temple JHB" loading="lazy" />
+                <source media="(max-width: 400px)" srcset="images/temple-400px.webp">
+                <source media="(max-width: 960px)" srcset="images/temple-960px.webp">
+                <img src="images/temple-960px.webp" alt="Temple JHB" loading="lazy">
             </picture>
             <div id="hero-content">
                 <p>South Africa Johannesburg Temple</p>
             </div>
-        </section>
+        </div>
         <h2>WDD 230: Course Activity Portal</h2>
         <div class="card-container">
             <section class="card" id="card-1">
@@ -94,11 +95,11 @@
                         <a href="week3/bom.html">LocalStorage API BOM</a> |
                         <a href="coc/discover.html">Week 3 COC Discover Page</a>
                     </li>
-                    <li>Week 4: <a href="https://codepen.io/izakhearn/pen/WNKzLVV?editors=0100">CSS Pseudo-Classes</a> | 
-                                <a href="week4/images/Week4-Combinators.webp">CSS Combinators</a> | 
-                                <a href="week4/tablebuild.html">Table</a> | 
-                                <a href="week4/form/index.html">HTML Forms</a>
-                                
+                    <li>Week 4: <a href="https://codepen.io/izakhearn/pen/WNKzLVV?editors=0100">CSS Pseudo-Classes</a> |
+                        <a href="week4/images/Week4-Combinators.webp">CSS Combinators</a> |
+                        <a href="week4/tablebuild.html">Table</a> |
+                        <a href="week4/form/index.html">HTML Forms</a>
+
                     </li>
                     <li>Week 5: <a href=""></a></li>
                     <li>Week 6: <a href=""></a></li>
@@ -115,15 +116,82 @@
             </section>
         </div>
         <section id="map">
+            <h3>Map</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57352.139979082676!2d28.266511450000003!3d-26.0496249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956ac491db13cb%3A0xde3354e4b77ca43a!2sGlen%20marais%2C%20Kempton%20Park%2C%201619%2C%20South%20Africa!5e0!3m2!1sen!2sau!4v1674142901417!5m2!1sen!2sau"
                 width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="contact">
+            <h3>Contact</h3>
+            <form method="post" name="contact">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label class="top">Full Name* <input type="text" name="fname" required></label>
+                    <label class="top">Email* <input type="email" name="email" required></label>
+                    <label class="top">Page Rating [<span id="ratingValue">6</span>]
+                        <input type="range" max="10" min="1" name="rating" step="1" list="ratingRange" oninput="document.getElementById('ratingValue').innerHTML = this.value"> </label>
+                    <datalist id="ratingRange">
+                        <option value="1"> 
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <div class="ratingLabels">
+                      <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <label class="top">Username* <input type="password" name="username"
+                            pattern="(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
+                    <label class="top">Confirm Username* <input type="password" name="confirmUsername"
+                            pattern="(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
+                    <input class="submitBtn" type="submit" value="Send Rating">
+                </fieldset>
+            </form>
+            <div id="formResponse">
+                <table id="formTable" class="hidden">
+                    <caption>Form Data</caption>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Full Name</td>
+                        <td id="fname-tbl"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td id="email-tbl"></td>
+                    </tr>
+                    <tr id="ratingRow">
+                        <td>Page Rating</td>
+                        <td id="rating-tbl"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td id="username-tbl"></td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
     </main>
     <footer>
         <p class="footer-text">
-            &copy; <a id="year"></a> | Izak Hearn | South Africa 🇿🇦
+            &copy; <span id="year"></span> | Izak Hearn | South Africa 🇿🇦
         </p>
         <p class="highlight" id="lastModified"></p>
     </footer>

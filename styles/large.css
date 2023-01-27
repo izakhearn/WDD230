@@ -54,4 +54,23 @@
         padding: 2%;
     }
 
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0.01fr 1fr;
+        padding: 2rem;
+        max-width: 960px;
+        grid-gap: 1rem;
+      } 
+    
+    .contact form {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    .contact #formResponse {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
 }
