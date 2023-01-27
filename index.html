@@ -156,9 +156,9 @@
                         <span>10</span>
                     </div>
                     <label class="top">Username* <input type="password" name="username"
-                            pattern="(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
+                            pattern="(?=.*\W)(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
                     <label class="top">Confirm Username* <input type="password" name="confirmUsername"
-                            pattern="(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
+                            pattern="(?=.*\W)(?=.*\d)(?=.*[a-z]).{5,12}" required></label>
                     <input class="submitBtn" type="submit" value="Send Rating">
                 </fieldset>
             </form>
