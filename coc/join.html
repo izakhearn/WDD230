@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="styles/large.css">
   <!-- Favicon Link -->
   <link rel="icon" href="images/favicon.ico">
-  <title>Clear Water Chamber of Commerce | Home Page | Weather | Events</title>
+  <title>Clear Water Chamber of Commerce | Join Page | Member Levels | Sign Up</title>
 </head>
 
 <body>
@@ -30,13 +30,13 @@
     <img id="nav-logo" src="images/logo.svg" alt="Clear Water Chamber of Commerce Logo">
     <div id="hamburger">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
+        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
       </svg>
     </div>
     <div id="close-button">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
         <path
-          d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/>
+          d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
       </svg>
     </div>
     <ul id="menu-items">
@@ -104,90 +104,83 @@
     </div>
   </header>
   <main>
-    <!-- Member Showcase Section -->
-    <section id="members">
-      <h2 id="member-heading">Members</h2>
-      <!-- To be filled in by a JSON Document by Javascript code when called from server -->
-      <!-- Below is a sample of the layout -->
-      <div class="member" id="member-1">
-        <h2>Member Name</h2>
-        <div class="member-content">
-          <p>Member Description</p>
-          <a href="#">Learn More</a>
-        </div>
-        <img src="images/placeholder.webp" alt="Member Logo">
-      </div>
-      <div class="member" id="member-2">
-        <h2>Member Name</h2>
-        <div class="member-content">
-          <p>Member Description</p>
-          <a href="#">Learn More</a>
-        </div>
-        <img src="images/placeholder.webp" alt="Member Logo">
-      </div>
-      <div class="member" id="member-3">
-        <h2>Member Name</h2>
-        <div class="member-content">
-          <p>Member Description</p>
-          <a href="#">Learn More</a>
-        </div>
-        <img src="images/placeholder.webp" alt="Member Logo">
-      </div>
-      <div class="member" id="member-4">
-        <h2>Member Name</h2>
-        <div class="member-content">
-          <p>Member Description</p>
-          <a href="#">Learn More</a>
-        </div>
-        <img src="images/placeholder.webp" alt="Member Logo">
-      </div>
-      <div id="member-tabs">
-        <!-- Radio Boxes showing which member is displaying -->
-        <input type="radio" name="member" id="member-1-tab" checked>
-        <input type="radio" name="member" id="member-2-tab" >
-        <input type="radio" name="member" id="member-3-tab" >
-        <input type="radio" name="member" id="member-4-tab" >
-      </div>
-    </section>
-
-    <!-- Events -->
-    <section id="events">
-      <!-- To be filled in by a JSON Document by Javascript code when called from server -->
-      <!-- Below is a sample of the layout -->
-      <img src="images/placeholder.webp" alt="Events-Background">
-      <div class="event-content" id="event-1">
-        <h2>Event Name</h2>
-        <p id="event-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-          doloremque inventore, nam saepe, consequuntur doloribus natus dicta,
-          excepturi nemo cupiditate atque ullam. Iste porro, unde animi
-          consequuntur dignissimos possimus saepe!
-        </p>
-        <p id="event-details">
-          Event Date : 00-00-0000 | Location : 23 Waverly Place
-        </p>
-        <a id="event-button" href="discover.html">Learn More</a>
-      </div>
-    </section>
-
-    <!-- Chamber of Commerce Team -->
-    <section id="team">
-      <div class="team-member" id="team-member-1">
-        <img src="images/placeholder.webp" alt="Team Member Photo">
-        <h2>Team Member Name</h2>
-        <p>Team Member Position</p>
-      </div>
-      <div class="team-member" id="team-member-2">
-        <img src="images/placeholder.webp" alt="Team Member Photo">
-        <h2>Team Member Name</h2>
-        <p>Team Member Position</p>
-      </div>
-      <div class="team-member" id="team-member-3">
-        <img src="images/placeholder.webp" alt="Team Member Photo">
-        <h2>Team Member Name</h2>
-        <p>Team Member Position</p>
-      </div>
-    </section>
+    <section class="joinForm">
+      <h2>Join The Chamber</h2>
+    <form action="thankyou.html" method="get" id="join">
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top" for="name">Name: <input type="text" name="name" id="name" required></label>
+        <label class="top" for="surname">Surname: <input type="text" name="surname" id="surname" required></label>
+        <label class="top" for="email">Email: <input type="email" name="email" id="email" required></label>
+        <label class="top" for="phone">Phone: <input type="tel" name="phone" id="phone" required></label>
+      </fieldset>
+      <!-- Business Information Section -->
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top" for="business-name">Business Name: <input type="text" name="business-name" id="business-name" pattern="(?=.*[ -])(?=.*[a-z]).{7,}"></label>
+        <!-- Radio Box with Options NP , Bronze , Silver , Gold -->
+        <div>Membership Level: </div> 
+        <label class="sbs"><input type="radio" name="membership" id="membership-np" value="NP" required> NP</label>
+        <label class="sbs"><input type="radio" name="membership" id="membership-bronze" value="Bronze" required> Bronze</label>
+        <label class="sbs"><input type="radio" name="membership" id="membership-silver" value="Silver" required> Silver</label>
+        <label class="sbs"><input type="radio" name="membership" id="membership-gold" value="Gold" required> Gold</label>
+        <label class="top" for="description">Description: <textarea name="description" id="description" cols="70" rows="10"></textarea></label>
+      </fieldset>
+      <!-- Hidden input with time as value -->
+      <input type="hidden" name="time" id="time" value="">
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" class="submitBtn">
+    </form>
+  
+    <div class="memberLevels">
+      <!-- Table with Member Levels. Showing Costs and Benefits -->
+      <h3>Member Cost and Benefits</h3>
+      <table>
+        <caption>Member Levels</caption>
+        <thead>
+          <tr>
+            <th>Membership Level</th>
+            <th>Cost</th>
+            <th>Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NP</td>
+            <td>Free</td>
+            <td><ul>
+              <li>Same As Gold</li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td>Bronze</td>
+            <td>$100</td>
+            <td><ul>
+              <li>Listing on Directory</li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td>Silver</td>
+            <td>$200</td>
+            <td><ul>
+              <li>Listing on Directory</li>
+              <li>Event Participation</li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>$300</td>
+            <td><ul>
+              <li>Listing on Directory</li>
+              <li>Event Participation</li>
+              <li>Discounts on Advertising</li>
+            </ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
   </main>
   <footer>
     <!-- Include contact information -->

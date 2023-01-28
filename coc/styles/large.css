@@ -380,4 +380,22 @@
     transition: 0.5s;
     box-shadow: 0 0 10px var(--nav-link-color);
   }
+  .joinForm {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  0.1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "form table";
+  }
+  
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
+
+  .memberLevels
+{
+  height: 40%;
+  position: sticky;
+  top: 25%;
+}
 }

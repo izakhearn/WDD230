@@ -435,7 +435,7 @@ footer a {
 
 .local-interest img {
   width: 50%;
-  height: 0 auto;
+  height: auto;
   border-radius: 10%;
 }
 
@@ -443,4 +443,162 @@ footer a {
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 0 0 10px var(--nav-link-color);
+}
+
+/* Start of CSS for join.html page */
+.joinForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  0.1fr 1fr 0.4fr;
+  grid-template-areas:
+    "header"
+    "form"
+    "table";
+  grid-gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+
+}
+
+.joinForm form{
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #445ba9;
+  grid-area: form;
+}
+
+.joinForm h2{
+  grid-area: header;
+  font-size: 2rem;
+  color: white;
+}
+
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 25rem;
+  background-color: rgba(7, 7, 7, 0.247);
+}
+
+form legend {
+  color: white;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  --webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px grey;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: white;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: White;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 30rem;
+}
+
+form label.top input:required {
+  border-left: 6px solid red;
+}
+
+form label.top input:required:valid {
+  border-left: 6px solid rgb(0, 255, 0);
+}
+
+form label.top input:focus {
+  outline: 3px solid #9757ffa3;
+}
+
+.memberLevels
+{
+  background-color:rgba(7, 7, 7, 0.247) ;
+  text-align: center;
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 25rem;
+  grid-area: table;
+  height: 100%;
+}
+
+.memberLevels h3{
+  color: white;
+}
+
+.memberLevels table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+  
+}
+
+.memberLevels th, .memberLevels td {
+  padding: 0.5rem;
+  border: 1px solid var(--accent3-color);
+}
+
+.memberLevels th {
+  background-color: #445ba9;
+  color: white;
+}
+
+.memberLevels tr:nth-child(even) {
+  background-color: #445ba9;
+}
+
+.memberLevels table caption{
+  font-weight: bold;
+  padding: 0.5rem;
+  caption-side: bottom;
+}
+
+/* Thank You Page CSS */
+
+.thankYou h2 {
+
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.thankYou p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
 }
