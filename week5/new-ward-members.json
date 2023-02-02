@@ -1,0 +1,18 @@
+{
+    "surname" : "Smith",
+    "moved-in" : "2012-01-01",
+    "number-of-people": 4,
+    "bishop-visited" : true,
+    "family-members": [
+        {
+            "name": "John",
+            "gender": "male",
+            "age": 20
+        },
+        {
+            "name": "Mary",
+            "gender": "female",
+            "age": 18
+        }
+    ]
+}
