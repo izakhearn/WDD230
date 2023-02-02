@@ -20,6 +20,8 @@
     <script src="scripts/mode.js" defer></script>
     <script src="scripts/visit.js" defer></script>
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="/scripts/links.js" defer></script>
     <meta property="og:title" content="WDD 230 - Portal - Izak Hearn">
     <meta property="og:type" content="website">
     <meta property="og:description"
@@ -74,39 +76,8 @@
         <div class="card-container">
             <section class="card" id="card-1">
                 <h3>Learning Activities</h3>
-                <ul>
-                    <li>
-                        Week 1: <a href="week1/holygrail.html"> Holy Grail</a> |
-                        <a href="https://codepen.io/izakhearn/pen/abjZWxb">Applied JS</a>
-                        | <a href="week1/media-query.html">Media Query</a> |
-                        <a href="coc/site-plan.html">Project Site Plan</a>
-                    </li>
-                    <li>
-                        Week 2:
-                        <a href="https://codepen.io/izakhearn/pen/QWBgyxr">WDD Responsive Menu</a> | <a
-                            href="week2/design.html">Designs</a> |
-                        <a href="week2/bom.html">Book of Mormon Chapters</a> |
-                        <a href="coc/index.html">Week 2 COC Home Page</a>
-                    </li>
-                    <li>
-                        Week 3: <a href="week3/images/landscape.webp">WebP</a> |
-                        <a href="https://codepen.io/izakhearn/pen/zYLPEMV">Responsive Images</a>
-                        | <a href="week3/lazyload.html">LazyLoad</a> |
-                        <a href="week3/bom.html">LocalStorage API BOM</a> |
-                        <a href="coc/discover.html">Week 3 COC Discover Page</a>
-                    </li>
-                    <li>Week 4: <a href="https://codepen.io/izakhearn/pen/WNKzLVV?editors=0100">CSS Pseudo-Classes</a> |
-                        <a href="week4/images/Week4-Combinators.webp">CSS Combinators</a> |
-                        <a href="week4/tablebuild.html">Table</a> |
-                        <a href="week4/form/index.html">HTML Forms</a> | 
-                        <a href="coc/join.html">Week 4 COC Join Page</a>
-                    </li>
-                    <li>Week 5: <a href="https://codepen.io/izakhearn/pen/vYaQwwy">CSS Pseudo-elements</a> | 
-                        <a href="week5/new-ward-members.json">New Members JSON</a> |
-                        <a href="week5/prophets.html">Prophets</a> |
-                        <a href="week5/weather.html">Weather</a> |
-                    </li>
-                    <li>Week 6: <a href=""></a></li>
+                <ul id="activities">
+                    
                 </ul>
             </section>
             <section class="card" id="card-2">
@@ -115,7 +86,12 @@
             </section>
             <section class="card" id="card-3">
                 <h3>Information</h3>
-                <p id="weather">Weather Placeholder</p>
+                <div id="weather">
+                    <h4>Weather</h4>
+                    <img id="weatherIcon">
+                    <p id="weatherTemp"></p>
+                    <p id="weatherDesc"></p>
+                </div>
                 <p id="visitCount"></p>
             </section>
         </div>

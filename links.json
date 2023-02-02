@@ -1,0 +1,108 @@
+{"Week1": [
+    {
+      "name": "Holy Grail",
+      "link": "week1/holygrail.html"
+    },
+    {
+      "name": "Applied JS",
+      "link": "https://codepen.io/izakhearn/pen/abjZWxb"
+    },
+    {
+      "name": "Media Query",
+      "link": "week1/media-query.html"
+    },
+    {
+      "name": "Project Site Plan",
+      "link": "coc/site-plan.html"
+    }
+  ],
+  "Week2": [
+    {
+      "name": "WDD Responsive Menu",
+      "link": "https://codepen.io/izakhearn/pen/QWBgyxr"
+    },
+    {
+      "name": "Designs",
+      "link": "week2/designs.html"
+    },
+    {
+      "name": "Book of Mormon Chapters",
+      "link": "week2/bom.html"
+    },
+    {
+      "name": "Week 2 COC Home Page",
+      "link": "coc/index.html"
+    }
+  ],
+
+  "Week3": [
+    {
+      "name": "WebP",
+      "link": "week3/images/landscape.webp"
+    },
+    {
+      "name": "Responsive Images",
+      "link": "https://codepen.io/izakhearn/pen/zYLPEMV"
+    },
+    {
+      "name": "LazyLoad",
+      "link": "week3/lazyload.html"
+    },
+    {
+      "name": "Local Storage API BOM",
+      "link": "week3/bom.html"
+    },
+    {
+      "name": "Week 3 COC Discover Page",
+      "link": "coc/discover.html"
+    }
+  ],
+
+  "Week4": [
+    {
+      "name": "CSS Pseudo-Classes",
+      "link": "https://codepen.io/izakhearn/pen/WNKzLVV"
+    },
+    {
+      "name": "CSS Combinators",
+      "link": "week4/images/Week4-Combinators.webp"
+    },
+    {
+      "name": "Table",
+      "link": "week4/tablebuild.html"
+    },
+    {
+      "name": "HTML Form",
+      "link": "week4/form/index.html"
+    },
+    {
+      "name": "Week 4 COC Join Page",
+      "link": "coc/join.html"
+    }
+  ],
+
+  "Week5": [
+    {
+      "name": "CSS Pseudo-elements",
+      "link": "https://codepen.io/izakhearn/pen/vYaQwwy"
+    },
+    {
+      "name": "New Members JSON",
+      "link": "week5/new-ward-members.json"
+    },
+    {
+      "name": "Prophets",
+      "link": "week5/prophets.html"
+    },
+    {
+      "name": "Weather",
+      "link": "week5/weather.html"
+    },
+    {
+      "name": "Week 5 COC Directory Page",
+      "link": "#"
+    }
+  ],
+
+  "Week6": []
+}
