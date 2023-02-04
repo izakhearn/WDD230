@@ -648,6 +648,10 @@ form textarea {
   justify-items: center;
 }
 
+.grid a{
+  color: rgb(0, 217, 255);
+}
+
 .company-card{
   display: flex;
   flex-direction: column;
