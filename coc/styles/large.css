@@ -65,7 +65,7 @@
     grid-template-columns: 5rem 5rem;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "weather-icon weather-info"
-    "weather-desc weather-desc";
+      "weather-desc weather-desc";
   }
 
   #weather-icon {
@@ -142,6 +142,7 @@
     text-align: center;
     font-size: 2rem;
   }
+
   .member {
     /* Grid with 2 rows and 1 column */
     display: grid;
@@ -149,6 +150,7 @@
     grid-template-rows: 2fr 0.5fr;
     padding: 1rem;
     text-align: center;
+    background-image: none;
   }
 
   .member img {
@@ -156,6 +158,7 @@
     height: 15rem;
     grid-area: 1/1/4/2;
     z-index: 1;
+    visibility: visible;
   }
 
   .member h2 {
@@ -185,6 +188,7 @@
     z-index: 2;
     color: black;
   }
+
   .member-content {
     grid-area: 3/1/4/2;
     background-color: #6ac6e551;
@@ -198,7 +202,7 @@
     text-align: center;
   }
 
-  #events {
+  .events {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
@@ -208,7 +212,7 @@
     height: 20rem;
   }
 
-  #events img {
+  .events img {
     width: 100%;
     height: 20rem;
     grid-area: 1/1/4/2;
@@ -231,28 +235,28 @@
     color: black;
   }
 
-  #event-description {
+  .event-description {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: center;
     font-size: 1rem;
   }
 
-  #event-details {
+  .event-details {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     text-align: center;
     font-size: 1rem;
   }
 
-  #event-button {
+  .event-button {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     text-align: center;
     font-size: 1rem;
   }
 
-  #team {
+  .team {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -332,9 +336,11 @@
   footer a {
     color: white;
   }
+
   footer p {
     color: white;
   }
+
   #footer-end {
     color: rgb(221, 255, 152);
   }
@@ -400,22 +406,41 @@
     transition: 0.5s;
     box-shadow: 0 0 10px var(--nav-link-color);
   }
+
   .joinForm {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  0.1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
       "header header"
       "form table";
   }
-  
+
   form label.sbs {
     padding: 0.4rem 0;
   }
 
-  .memberLevels
-{
-  height: 40%;
-  position: sticky;
-  top: 25%;
-}
+  .memberLevels {
+    height: 40%;
+    position: sticky;
+    top: 25%;
+  }
+
+  /* CSS for Discover Page */
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .list .company-info {
+    flex-direction: row;
+  }
+  
+  .list .company-info:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--nav-link-color);
+  }
+
+
 }

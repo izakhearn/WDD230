@@ -107,18 +107,11 @@ nav a:hover {
 #weather {
   grid-row: 2/3;
   grid-column: 1/3;
+  color: white;
 }
 
 #weather p {
   color: var(--nav-link-color);
-}
-
-#weather-icon {
-  display: none;
-}
-
-#weather-icon svg path {
-  fill: var(--nav-link-color);
 }
 
 header {
@@ -139,14 +132,6 @@ header {
 
 .hero-content h1 {
   color: black;
-}
-
-#hero-2 {
-  display: none;
-}
-
-#hero-3 {
-  display: none;
 }
 
 #members {
@@ -174,13 +159,15 @@ header {
   grid-template-rows: 2fr 0.5fr;
   padding: 1rem;
   text-align: center;
+  background-image: url(../images/Placeholder160x160.webp);
+  background-size: cover;
 }
 
 .member img {
   width: 100%;
-  height: 15rem;
   grid-area: 1/1/4/2;
   z-index: 1;
+  visibility: hidden;
 }
 
 .member h2 {
@@ -223,7 +210,7 @@ header {
   text-align: center;
 }
 
-#events {
+.events {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
@@ -231,11 +218,12 @@ header {
   padding: 1rem;
   text-align: center;
   height: 100%;
+  background-image: url(../images/Placeholder1441x320.webp);
+  background-size: cover;
 }
 
-#events img {
+.events img {
   width: 100%;
-  height: 100%;
   grid-area: 1/1/4/2;
 }
 
@@ -258,27 +246,27 @@ header {
   color: black;
 }
 
-#event-description {
+.event-description {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   text-align: center;
   font-size: 1rem;
 }
 
-#event-details {
+.event-details {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   text-align: center;
   font-size: 1rem;
 }
 
-#event-button {
+.event-button {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   text-align: center;
   font-size: 1rem;
 }
-#team {
+.team {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -311,8 +299,6 @@ header {
 
 .team-member img {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
   grid-area: team-member-image;
   justify-self: center;
 }
@@ -364,7 +350,7 @@ footer a {
   color: var(--nav-link-color);
 }
 
-#footer-end {
+.footer-end {
   color: rgb(221, 255, 152);
 }
 
@@ -466,6 +452,8 @@ footer a {
   border-radius: 10px;
   background-color: #445ba9;
   grid-area: form;
+  max-width: 25rem;
+  width: 100%;
 }
 
 .joinForm h2{
@@ -541,6 +529,19 @@ form label.top input:focus {
   outline: 3px solid #9757ffa3;
 }
 
+form textarea {
+  --webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px grey;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: white;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .memberLevels
 {
   background-color:rgba(7, 7, 7, 0.247) ;
@@ -601,4 +602,93 @@ form label.top input:focus {
   font-size: 2rem;
   text-align: center;
   padding: 1rem;
+}
+
+/* Directory Page CSS */
+
+.btn {
+  background-color: var(--accent1-color);
+  color: white;
+  border: black 1px solid;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  grid-area: btn;
+}
+
+.btn:hover, .active {
+  background-color: var(--accent2-color);
+}
+
+.directory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "btn btn";
+  grid-gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.directory h1 {
+  grid-area: header;
+  font-size: 2rem;
+  color: white
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.company-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.273);
+  max-width: 20rem;
+  width: 100%;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.company-logo img{
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.company-info{
+  color: white;
+}
+
+.list .company-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: #fff;
+  color: black;
+  
+}
+
+.list h3{
+  color: black;
+}
+
+.list section:nth-child(even){
+  background-color: rgb(221, 221, 221);
 }

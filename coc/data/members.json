@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "Chicken House",
+      "address": "123 Main Street",
+      "website": "www.chickenhouse.com",
+      "phone": "123-456-7890",
+      "membership": "Gold",
+      "logo": "ChickenHouse.webp"
+    },
+    {
+      "name": "Donatellis",
+      "address": "25 Jackson Street",
+      "website": "www.donatellis.com",
+      "phone": "123-456-7890",
+      "membership": "Silver",
+      "logo": "Donatellis.webp"
+    },
+    {
+      "name": "StromTrooper Ice Cream",
+      "address": "65 new street",
+      "website": "www.stromtrooperic.com",
+      "phone": "123-456-7890",
+      "membership": "bronze",
+      "logo": "stormtrooper.webp"
+    },
+    {
+      "name": "Blue Artic",
+      "address": "87 Jason Court",
+      "website": "www.blueartic.com",
+      "phone": "123-456-7890",
+      "membership": "Gold",
+      "logo": "blueartic.webp"
+    },
+    {
+      "name": "Campers Island",
+      "address": "178 Island Way",
+      "website": "www.campersisland.com",
+      "phone": "123-456-7890",
+      "membership": "NPO",
+      "logo": "campersisland.webp"
+    },
+    {
+      "name": "Country Roams",
+      "address": "179 Island Way",
+      "website": "www.countryroams.com",
+      "phone": "123-456-7890",
+      "membership": "Silver",
+      "logo": "CountryRoams.webp"
+    },
+    {
+      "name": "Outdoor Gear",
+      "address": "56 Nation Close",
+      "website": "www.outdoorgear.com",
+      "phone": "123-456-7890",
+      "membership": "Silver",
+      "logo": "outdoorgear.webp"
+    },
+    {
+      "name": "Wander",
+      "address": "50 Nation Close",
+      "website": "www.wander.com",
+      "phone": "123-456-7890",
+      "membership": "Gold",
+      "logo": "wander.webp"
+    },
+    {
+      "name": "Navy Blue",
+      "address": "167 Main Street",
+      "website": "www.navyblue.com",
+      "phone": "123-456-7890",
+      "membership": "Gold",
+      "logo": "navyblue.webp"
+    }
+  ]
+}

@@ -21,8 +21,11 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/large.css">
   <script src="scripts/visit.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/mobileMenu.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
   <link rel="icon" href="images/favicon.ico">
-  <title>Clear Water Chamber of Commerce</title>
+  <title>Clear Water Chamber of Commerce | Discover Page | Events</title>
 </head>
 
 <body>
@@ -42,18 +45,13 @@
     <ul id="menu-items">
       <li class="menu-item"><a href="index.html">Home</a></li>
       <li class="menu-item"><a href="discover.html">Discover</a></li>
-      <li class="menu-item"><a href="#">Directory</a></li>
-      <li class="menu-item"><a href="#">Join</a></li>
+      <li class="menu-item"><a href="directory.html">Directory</a></li>
+      <li class="menu-item"><a href="join.html">Join</a></li>
     </ul>
     <!-- Weather Place holder that will be automated to get are weather by Javascript -->
     <div id="weather">
-      <div id="weather-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-          <path
-            d="M22.5 9.5V2h3v7.5Zm12.8 5.3-2.1-2.1 5.3-5.35 2.1 2.15Zm3.2 10.7v-3H46v3ZM22.5 46v-7.5h3V46Zm-9.85-31.25L7.4 9.5l2.1-2.1 5.3 5.3Zm25.9 25.85-5.35-5.3 2.05-2.05 5.4 5.2ZM2 25.5v-3h7.5v3Zm7.55 15.1L7.4 38.5l5.25-5.25 1.1 1 1.1 1.05ZM24 36q-5 0-8.5-3.5T12 24q0-5 3.5-8.5T24 12q5 0 8.5 3.5T36 24q0 5-3.5 8.5T24 36Zm0-3q3.75 0 6.375-2.625T33 24q0-3.75-2.625-6.375T24 15q-3.75 0-6.375 2.625T15 24q0 3.75 2.625 6.375T24 33Zm0-9Z" />
-        </svg>
-      </div>
-      <p id="weather-info">High: 5 C | Low: -1 C</p>
+      <img id="weather-icon" src="images/Placeholder10x10.webp" alt="Weather Icon"><span id="weather-info"></span>
+      <p id="weather-desc"></p>
     </div>
   </nav>
   <header>
@@ -70,30 +68,6 @@
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
         <a href="#">Join Now</a>
-      </div>
-    </section>
-    <section id="hero-2" class="hero">
-      <div class="hero-content">
-        <h1>Discover Clear Water</h1>
-        <p>
-          Clear Water is a small town in the middle of nowhere. We have a lot
-          of great things to offer, but we need your help to get the word out.
-          Join the Clear Water Chamber of Commerce today and help us grow our
-          community.
-        </p>
-        <a href="discover.html">Discover Now</a>
-      </div>
-    </section>
-    <section id="hero-3" class="hero">
-      <div class="hero-content">
-        <h1>Directory</h1>
-        <p>
-          Clear Water is a small town in the middle of nowhere. We have a lot
-          of great things to offer, but we need your help to get the word out.
-          Join the Clear Water Chamber of Commerce today and help us grow our
-          community.
-        </p>
-        <a href="#">Directory</a>
       </div>
     </section>
     <div id="hero-tabs">
@@ -173,8 +147,6 @@
       Izak Hearn | WDD 230 | <span id="lastModified"></span>
     </p>
   </footer>
-  <script src="scripts/dates.js"></script>
-  <script src="scripts/mobileMenu.js"></script>
 </body>
 
 </html>
