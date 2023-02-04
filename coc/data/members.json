@@ -30,7 +30,7 @@
       "website": "www.blueartic.com",
       "phone": "123-456-7890",
       "membership": "Gold",
-      "logo": "blueartic.webp"
+      "logo": "BlueArtic.webp"
     },
     {
       "name": "Campers Island",
@@ -38,7 +38,7 @@
       "website": "www.campersisland.com",
       "phone": "123-456-7890",
       "membership": "NPO",
-      "logo": "campersisland.webp"
+      "logo": "CampersIsland.webp"
     },
     {
       "name": "Country Roams",
@@ -54,7 +54,7 @@
       "website": "www.outdoorgear.com",
       "phone": "123-456-7890",
       "membership": "Silver",
-      "logo": "outdoorgear.webp"
+      "logo": "OutdoorGear.webp"
     },
     {
       "name": "Wander",
@@ -62,7 +62,7 @@
       "website": "www.wander.com",
       "phone": "123-456-7890",
       "membership": "Gold",
-      "logo": "wander.webp"
+      "logo": "Wander.webp"
     },
     {
       "name": "Navy Blue",
@@ -70,7 +70,7 @@
       "website": "www.navyblue.com",
       "phone": "123-456-7890",
       "membership": "Gold",
-      "logo": "navyblue.webp"
+      "logo": "NavyBlue.webp"
     }
   ]
 }
