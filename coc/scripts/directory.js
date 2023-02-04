@@ -28,7 +28,7 @@ getCompanies();
                 <div class="company-info">
                     <h3>${name.name}</h3>
                     <p>${name.address}</p>
-                    <a href=${name.website}>${name.website}</a>
+                    <a href=https://${name.website}>${name.website}</a>
                     <p>${name.phone}</p>
                     <p>${name.membership}</p>
                 </div>
@@ -49,7 +49,7 @@ getCompanies();
            company.innerHTML = `
                 <h3>${name.name}</h3>
                 <p>${name.address}</p>
-                <a href=${name.website}>${name.website}</a>
+                <a href=https://${name.website}>${name.website}</a>
                 <p>${name.phone}</p>
                 <p>${name.membership}</p>
             `;
