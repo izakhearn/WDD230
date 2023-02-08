@@ -24,16 +24,21 @@
   <script src="scripts/dates.js" defer></script>
   <script src="scripts/mobileMenu.js" defer></script>
   <script src="scripts/weather.js" defer></script>
+  <script src="scripts/banner.js" defer></script>
   <link rel="icon" href="images/favicon.ico">
   <title>Clear Water Chamber of Commerce | Discover Page | Events</title>
 </head>
 
 <body>
+  <section id="banner">
+    <h3 id="meeting-message">Come and join us this wednesday at 7PM for our weekly meet and greet.<span
+        id="close-banner">❌</span></h3>
+  </section>
   <nav>
     <img id="nav-logo" src="images/logo.svg" alt="Clear Water Chamber of Commerce Logo">
     <div id="hamburger">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
+        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
       </svg>
     </div>
     <div id="close-button">
@@ -50,8 +55,6 @@
     </ul>
     <!-- Weather Place holder that will be automated to get are weather by Javascript -->
     <div id="weather">
-      <img id="weather-icon" src="images/Placeholder10x10.webp" alt="Weather Icon"><span id="weather-info"></span>
-      <p id="weather-desc"></p>
     </div>
   </nav>
   <header>
@@ -70,12 +73,6 @@
         <a href="#">Join Now</a>
       </div>
     </section>
-    <div id="hero-tabs">
-      <!-- Radio Boxes showing which section is displaying -->
-      <input type="radio" name="hero" id="hero-1-tab" checked>
-      <input type="radio" name="hero" id="hero-2-tab">
-      <input type="radio" name="hero" id="hero-3-tab">
-    </div>
   </header>
   <main id="sidebar-grid">
     <section id="sidebar">
@@ -112,7 +109,7 @@
         <picture>
           <source media="(min-width: 960px)" srcset="images/restaurant-960.webp">
           <source media="(min-width: 400px)" srcset="images/restaurant-400.webp">
-          <img src="images/restaurant.webp" alt="Restaurants" loading="lazy" >
+          <img src="images/restaurant.webp" alt="Restaurants" loading="lazy">
         </picture>
         <h3>Restaurants</h3>
       </div>
