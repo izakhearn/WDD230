@@ -22,11 +22,18 @@ apiFetch();
 // Choose 4 random members to display
 
 function displayResultsMembers(data) {
+    let indexChosen = [];
     let randomMembers = [];
     let randomMember;
     for (let i = 0; i < 4; i++) {
         randomMember = data.members[Math.floor(Math.random() * data.members.length)];
-        randomMembers.push(randomMember);
+        if ((randomMember.membership == "Gold" || randomMember.membership == "Silver")&& !indexChosen.includes(randomMember)) {
+            randomMembers.push(randomMember);
+            indexChosen.push(randomMember);
+        }
+        else{
+            i--;
+        }
     }
     for (let i = 0; i < membersHTML.length; i++) {
         const member = membersHTML[i];
