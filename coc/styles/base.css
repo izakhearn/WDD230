@@ -226,6 +226,10 @@ header {
   color: var(--accent2-color);
 }
 
+.member a {
+  color: rgb(255, 147, 147);
+}
+
 
 .events {
   display: grid;
@@ -235,8 +239,9 @@ header {
   padding: 1rem;
   text-align: center;
   height: 100%;
-  background-image: url(../images/Placeholder1441x320.webp);
+  background-image: url(../images/event.webp);
   background-size: cover;
+  color: white;
 }
 
 .events img {
@@ -249,7 +254,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: rgba(0, 0, 0, 0.33);
   z-index: 2;
   padding: 1rem;
   margin-top: 0;
@@ -260,7 +265,7 @@ header {
   grid-row: 1 / 2;
   text-align: center;
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .event-description {

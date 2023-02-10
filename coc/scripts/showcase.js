@@ -56,6 +56,7 @@ function displayResultsMembers(data) {
         imgLocation = "images/" + randomMember.logo;
         memberImage.setAttribute('src', imgLocation);
         memberImage.setAttribute('alt', randomMember.name);
+        memberImage.setAttribute("loading", "lazy");
         member.appendChild(memberImage);
     
 
