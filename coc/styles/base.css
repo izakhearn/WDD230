@@ -162,6 +162,10 @@ header {
   margin: 0 auto;
 }
 
+.hero-content a{
+  color: rgb(30, 255, 236);
+}
+
 #members {
   /* Grid with 1 row and 4 columns spaced out equally */
   /* Top row will just be heading */
@@ -287,6 +291,7 @@ header {
   grid-row: 4 / 5;
   text-align: center;
   font-size: 1rem;
+  color: rgb(30, 255, 236);
 }
 
 .team {
